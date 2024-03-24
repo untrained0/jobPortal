@@ -8,6 +8,7 @@ import {
   FlatList,
 } from "react-native";
 import { useRouter } from "expo-router";
+import { useNavigation } from '@react-navigation/native';
 
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
@@ -15,8 +16,12 @@ import { icons, SIZES } from "../../../constants";
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
+  const navigation = useNavigation(); // Get navigation object using useNavigation hook
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-time");
+  const handleSurveyButtonPress = () => {
+    navigation.navigate("Survey"); // Navigate to the "Survey" screen
+  };
 
   return (
     <View>
@@ -68,6 +73,10 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
           horizontal
         />
       </View>
+      {/* Survey Button */}
+      <TouchableOpacity style={styles.surveyBtn} onPress={handleSurveyButtonPress}>
+        <Text style={styles.surveyBtnText}>Take Survey</Text>
+      </TouchableOpacity>
     </View>
   );
 };
