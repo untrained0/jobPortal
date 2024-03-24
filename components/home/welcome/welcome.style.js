@@ -57,6 +57,20 @@ const styles = StyleSheet.create({
     width: "100%",
     marginTop: SIZES.medium,
   },
+  applyBtn: {
+    flex: 1,
+    backgroundColor: "#FE7654",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: SIZES.medium,
+    borderRadius: SIZES.medium,
+  },
+  applyBtnText: {
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    fontFamily: FONT.bold,
+  },
   tab: (activeJobType, item) => ({
     paddingVertical: SIZES.small / 2,
     paddingHorizontal: SIZES.small,

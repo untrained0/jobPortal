@@ -25,7 +25,11 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
         <Text style={styles.userName}>Hello Piyush</Text>
         <Text style={styles.welcomeMessage}>Find your perfect job</Text>
       </View>
-
+      <TouchableOpacity
+        style={styles.applyBtn}
+      >
+        <Text style={styles.applyBtnText}>Apply for job</Text>
+      </TouchableOpacity>
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
