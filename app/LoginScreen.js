@@ -59,7 +59,7 @@ import {
       <SafeAreaView style={{ flex: 1, backgroundColor: "white", padding: 10, alignItems: "center" }}>
         <KeyboardAvoidingView>
           <View style={{ justifyContent: "center", alignItems: "center", marginTop: 100 }}>
-            <Text style={{ color: "#003580", fontSize: 17, fontWeight: "700" }}>Sign In</Text>
+            <Text style={{ color: "#FE7654", fontSize: 17, fontWeight: "700" }}>Sign In</Text>
             <Text style={{ marginTop: 15, fontSize: 18, fontWeight: "500" }}>Sign In to Your Account</Text>
           </View>
   
@@ -90,7 +90,7 @@ import {
   
           <Pressable
             onPress={login}
-            style={{ width: 200, backgroundColor: "#003580", padding: 15, borderRadius: 7, marginTop: 50, marginLeft: "auto", marginRight: "auto" }}
+            style={{ width: 200, backgroundColor: "#FE7654", padding: 15, borderRadius: 7, marginTop: 50, marginLeft: "auto", marginRight: "auto" }}
           >
             <Text style={{ textAlign: "center", color: "white", fontSize: 17, fontWeight: "bold" }}>Login</Text>
           </Pressable>
@@ -114,10 +114,11 @@ import {
   const styles = StyleSheet.create({
     biometricButton: {
       width: 200,
-      backgroundColor: "#003580",
+      backgroundColor: "#FE7654",
       padding: 15,
       borderRadius: 7,
       marginTop: 50,
+      marginLeft:50,
     },
     buttonText: {
       textAlign: "center",

@@ -86,7 +86,7 @@ const RegisterScreen = () => {
         }}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={{ color: "#003580", fontSize: 17, fontWeight: "700" }}>
+        <Text style={{ color: "#FE7654", fontSize: 17, fontWeight: "700" }}>
           Register
         </Text>
 
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   },
   registerButton: {
     width: 200,
-    backgroundColor: "#003580",
+    backgroundColor: "#FE7654",
     padding: 15,
     borderRadius: 7,
     marginTop: 
