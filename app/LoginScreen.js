@@ -27,6 +27,7 @@ import {
           console.log("user credential", userCredential);
           const user = userCredential.user;
           console.log("user details", user);
+          navigation.navigate("Welcome");
         })
         .catch((error) => {
           Alert.alert("Error", error.message);
